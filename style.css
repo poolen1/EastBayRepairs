@@ -1,0 +1,76 @@
+ul.intro {
+ list-style-type: none;
+ margin: 0;
+ padding: 0;
+ overflow: hidden;
+ background-image: url("https://images.pexels.com/photos/1569003/pexels-photo-1569003.jpeg?auto=compress&cs=tinysrgb&h=650&w=940");
+ height: 600px;
+ background-repeat: no-repeat;
+ background-size: cover;
+ position: relative;
+ top: 0;
+}
+
+ul.intro li {
+ display: block;
+ color: white;
+ text-align: center;
+ padding: 14px 16px;
+ text-decoration: none;
+ float: left;
+}
+
+ul.intro li.right {float: right;}
+
+ul.intro li.title {
+	position: absolute;
+	margin: 30px;
+	top: 30%;
+	color: white;
+}
+
+ul.intro li.title-link {
+	position: absolute;
+	margin: 60px;
+	top: 60%;
+	color: white;
+}
+
+ul.intro li a.active {background-color: #4CAF50;}
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: sticky;
+  top: 0;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #111;}
+
+ul.topnav li a.active {background-color: #4CAF50;}
+
+.active {
+  background-color: #4CAF50;
+}
+
+ul.topnav li.right {float: right;}
+
+/* screen-size responsive
+@media screen and (max-width: 600px) {
+  ul.topnav li.right, 
+  ul.topnav li {float: none;}
+  */
+}
