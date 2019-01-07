@@ -33,6 +33,7 @@ div.intro li {
 	padding: 14px 16px;
 	text-decoration: none;
 	float: left;
+	z-index: 9;
 }
 
 div.intro li.right {float: right;}
@@ -49,6 +50,7 @@ div.intro li.title-link {
 	margin: 60px;
 	top: 60%;
 	color: white;
+	border-style: double;
 }
 
 div.intro li a:active {background-color: #4CAF50;}
