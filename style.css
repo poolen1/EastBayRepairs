@@ -1,23 +1,26 @@
+/*Style sheet for eastbayrepairs.com*/
+
+/*Introduction; class="intro"*/
 ul.intro {
- list-style-type: none;
- margin: 0;
- padding: 0;
- overflow: hidden;
- background-image: url("https://images.pexels.com/photos/1569003/pexels-photo-1569003.jpeg?auto=compress&cs=tinysrgb&h=650&w=940");
- height: 600px;
- background-repeat: no-repeat;
- background-size: cover;
- position: relative;
- top: 0;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-image: url("https://images.pexels.com/photos/1569003/pexels-photo-1569003.jpeg?auto=compress&cs=tinysrgb&h=650&w=940");
+	height: 600px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	top: 0;
 }
 
 ul.intro li {
- display: block;
- color: white;
- text-align: center;
- padding: 14px 16px;
- text-decoration: none;
- float: left;
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	float: left;
 }
 
 ul.intro li.right {float: right;}
@@ -38,24 +41,25 @@ ul.intro li.title-link {
 
 ul.intro li a.active {background-color: #4CAF50;}
 
+/*navigation bar; class="topnav"*/
 ul.topnav {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-  position: sticky;
-  top: 0;
+ 	list-style-type: none;
+ 	margin: 0;
+ 	padding: 0;
+ 	overflow: hidden;
+ 	background-color: #333;
+ 	position: sticky;
+ 	top: 0;
 }
 
 ul.topnav li {float: left;}
 
 ul.topnav li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+ 	display: block;
+ 	color: white;
+ 	text-align: center;
+ 	padding: 14px 16px;
+ 	text-decoration: none;
 }
 
 ul.topnav li a:hover:not(.active) {background-color: #111;}
@@ -66,11 +70,87 @@ ul.topnav li a.active {background-color: #4CAF50;}
   background-color: #4CAF50;
 }
 
-ul.topnav li.right {float: right;}
+ul.topnav li a.right {float: right;}
 
 /* screen-size responsive
 @media screen and (max-width: 600px) {
   ul.topnav li.right, 
   ul.topnav li {float: none;}
-  */
 }
+*/
+
+/*About Us; class="about"*/
+
+/*Estimate Reminder; class="reminder"*/
+div.reminder {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-image: url("https://marketplace.canva.com/MADGvodULvM/7/screen/canva-flat-lay-photography-of-hand-tools-MADGvodULvM.jpg");
+	height: 400px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	top: 0;
+}
+
+div.reminder p.reminder-text {
+	position: absolute;
+	text-align: center;
+	margin: 30px;
+	top: 30%;
+	color: white;
+}
+
+div.reminder p.reminder-link {
+	position: absolute;
+	text-align: center;
+	margin: 60px;
+	top: 60%;
+	color: white;
+}
+
+/*Handyman Services; class="services"*/
+
+/*Mission Statement; class="commitment"*/
+div.commitment {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-image: url("https://images.pexels.com/photos/113726/pexels-photo-113726.jpeg?auto=compress&cs=tinysrgb&h=650&w=940");
+	height: 600px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	top: 0;
+}
+
+#mission {
+	text-align: center;
+	margin: 60px;
+	color: white;
+}
+
+div.commitment h3.mission-title {
+	position: absolute;
+	text-align: center;
+	margin: 30px;
+	padding: 30px;
+	top: 30%;
+	color: white;
+}
+
+div.commitment p.mission-text {
+	position: absolute;
+	text-align: center;
+	margin: 30px;
+	padding: 30px;
+	top: 30%;
+	color: white;
+}
+
+/*Free Estimate; class="contact-form"*/
+
+/*Contact Us; class="footer"*/
