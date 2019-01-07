@@ -1,20 +1,32 @@
 /*Style sheet for eastbayrepairs.com*/
 
 /*Introduction; class="intro"*/
-ul.intro {
+.intro {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
 	background-image: url("https://images.pexels.com/photos/1569003/pexels-photo-1569003.jpeg?auto=compress&cs=tinysrgb&h=650&w=940");
-	height: 600px;
+	height: 550px;
 	background-repeat: no-repeat;
 	background-size: cover;
 	position: relative;
 	top: 0;
 }
 
-ul.intro li {
+div.intro:hover > .overlay {
+    position: absolute;
+    top: 0;
+    width:100%;
+    height:100%;
+    left: 0;
+    background-color:#000;
+    opacity:0.5;
+    z-index: 8;
+    display: block;
+}
+
+div.intro li {
 	display: block;
 	color: white;
 	text-align: center;
@@ -23,23 +35,25 @@ ul.intro li {
 	float: left;
 }
 
-ul.intro li.right {float: right;}
+div.intro li.right {float: right;}
 
-ul.intro li.title {
+div.intro li.title {
 	position: absolute;
 	margin: 30px;
 	top: 30%;
 	color: white;
 }
 
-ul.intro li.title-link {
+div.intro li.title-link {
 	position: absolute;
 	margin: 60px;
 	top: 60%;
 	color: white;
 }
 
-ul.intro li a.active {background-color: #4CAF50;}
+div.intro li a:active {background-color: #4CAF50;}
+div.intro li a:link {color: white;}
+div.intro li a:visited {color: white;}
 
 /*navigation bar; class="topnav"*/
 ul.topnav {
@@ -50,9 +64,11 @@ ul.topnav {
  	background-color: #333;
  	position: sticky;
  	top: 0;
+ 	z-index: 1;
 }
 
 ul.topnav li {float: left;}
+ul.topnav li.right {float: right;}
 
 ul.topnav li a {
  	display: block;
@@ -80,6 +96,9 @@ ul.topnav li a.right {float: right;}
 */
 
 /*About Us; class="about"*/
+div.about{
+	height: 400px;
+}
 
 /*Estimate Reminder; class="reminder"*/
 div.reminder {
@@ -112,6 +131,30 @@ div.reminder p.reminder-link {
 }
 
 /*Handyman Services; class="services"*/
+div.services {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	height: 600px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	top: 0;
+}
+
+#job-types {
+	text-align: center;
+	margin: 60px;
+}
+
+div.services li.mission-title {
+	color: white;
+}
+
+div.services li.mission-text {
+	color: white;
+}
 
 /*Mission Statement; class="commitment"*/
 div.commitment {
@@ -133,24 +176,17 @@ div.commitment {
 	color: white;
 }
 
-div.commitment h3.mission-title {
-	position: absolute;
-	text-align: center;
-	margin: 30px;
-	padding: 30px;
-	top: 30%;
+div.commitment li.mission-title {
 	color: white;
 }
 
-div.commitment p.mission-text {
-	position: absolute;
-	text-align: center;
-	margin: 30px;
-	padding: 30px;
-	top: 30%;
+div.commitment li.mission-text {
 	color: white;
 }
 
 /*Free Estimate; class="contact-form"*/
 
 /*Contact Us; class="footer"*/
+div.footer {
+
+}
