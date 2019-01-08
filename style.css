@@ -116,6 +116,32 @@ div.reminder {
 	top: 0;
 }
 
+div.reminder p a:active {background-color: #4CAF50;}
+div.reminder p a:link {color: white;}
+div.reminder p a:visited {color: white;}
+
+div.reminder:hover > .overlay {
+    position: absolute;
+    top: 0;
+    width:100%;
+    height:100%;
+    left: 0;
+    background-color:#000;
+    opacity:0.5;
+    z-index: 8;
+    display: block;
+}
+
+div.reminder p {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	float: left;
+	z-index: 9;
+}
+
 div.reminder p.reminder-text {
 	position: absolute;
 	text-align: center;
@@ -130,6 +156,7 @@ div.reminder p.reminder-link {
 	margin: 60px;
 	top: 60%;
 	color: white;
+	border-style: double;
 }
 
 /*Handyman Services; class="services"*/
@@ -150,12 +177,7 @@ div.services {
 	margin: 60px;
 }
 
-div.services li.mission-title {
-	color: white;
-}
-
-div.services li.mission-text {
-	color: white;
+div.services p {
 }
 
 /*Mission Statement; class="commitment"*/
@@ -170,25 +192,51 @@ div.commitment {
 	background-size: cover;
 	position: relative;
 	top: 0;
+	color: white;
+}
+
+div.commitment:hover > .overlay {
+    position: absolute;
+    top: 0;
+    width:100%;
+    height:100%;
+    left: 0;
+    background-color:#000;
+    opacity:0.5;
+    z-index: 8;
+    display: block;
+}
+
+div.commitment p {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	float: left;
+	z-index: 9;
 }
 
 #mission {
 	text-align: center;
 	margin: 60px;
 	color: white;
+	z-index: 9;
 }
 
-div.commitment li.mission-title {
-	color: white;
-}
-
-div.commitment li.mission-text {
+div.commitment p {
 	color: white;
 }
 
 /*Free Estimate; class="contact-form"*/
+div.contact-form {
+	text-align: center;
+}
 
 /*Contact Us; class="footer"*/
 div.footer {
+	text-align: center;
+	background-color: gray;
+	color: white;
 
 }
