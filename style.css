@@ -37,14 +37,17 @@ div.intro:hover > .overlay {
 div.intro li {
 	display: block;
 	color: white;
-	text-align: center;
+	text-align: left;
 	padding: 14px 16px;
 	text-decoration: none;
 	float: left;
 	z-index: 9;
 }
 
-div.intro li.right {float: right;}
+div.intro li.top-contact {
+	float: right;
+	right-margin: 50px;
+}
 
 div.intro li.title {
 	position: absolute;
@@ -58,7 +61,11 @@ div.intro li.title-link {
 	margin: 60px;
 	top: 60%;
 	color: white;
+}
+
+div.intro a.title-link {
 	border-style: double;
+	padding: 20px;
 }
 
 div.intro li a:link {color: white;}
@@ -106,7 +113,21 @@ ul.topnav li a.right {float: right;}
 
 /*About Us; class="about"*/
 div.about{
-	height: 400px;
+	height: 500px;
+}
+
+#aboutUs {
+	float: left;
+	width: 20%;
+	margin: 75px;
+	padding-left: 5%;
+}
+
+#slideshow {
+	float: right;
+	width: 20%;
+	margin: 10px;
+	padding-right: 5%;
 }
 
 /*Estimate Reminder; class="reminder"*/
@@ -249,9 +270,7 @@ div.commitment p {
 	display: block;
 	color: white;
 	text-align: center;
-	padding: 14px 16px;
 	text-decoration: none;
-	float: left;
 	z-index: 9;
 }
 
@@ -260,6 +279,26 @@ div.commitment p {
 	margin: 60px;
 	color: white;
 	z-index: 9;
+}
+
+#ourMission {
+	float: left;
+	width: 20%;
+	margin: 10px;
+	padding-left: 5%;
+}
+
+#timely {
+	float: left;
+	width: 20%;
+	margin: 10px;
+}
+
+#green {
+	float: right;
+	width: 20%;
+	margin: 10px;
+	padding-right: 5%;
 }
 
 div.commitment p {

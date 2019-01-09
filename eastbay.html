@@ -25,13 +25,13 @@
 			<div class="overlay"></div>
 			<div class="text">
 				<ul>
-					<div
-					<li>East Bay Repairs</li>
-					<li class="right">&#9993 Email</li>
-					<li class="right">&#x1F4F1; Phone</li>
+					<div>
+					<li> East Bay Repairs</li>
+					<li class="top-contact">&#9993 eastbayrepairs@gmail.com</li>
+					<li class="top-contact">&#x1F4F1; 555-867-5309</li>
 					<li class="title"><h1 style="font-size:50px">Give your home the <br> attention it deserves</h1></li>
 					<!--Free Estimate button (links downpage to form)-->
-					<li class="title-link"><a href="#estimate">Get a free estimate!</a></li>
+					<li class="title-link"><a class="title-link" href="#estimate">Get a free estimate!</a></li>
 				</ul>
 			</div>
 		</div>
@@ -46,9 +46,40 @@
 
 		<!--About-->
 		<div class="about">
-			<h2 id="about">About Us</h2>
-			<p>About us copy (bio)</p>
-			<p>Work photos widget on the right</p>
+			<div id="aboutUs">
+				<h2>About Us</h2>
+				<p>About us copy (bio)</p>
+			</div>
+				<div id="slideshow">
+				<div class="w3-content w3-display-container">
+				  <img class="mySlides" src="/home/terra/Desktop/Career/Portfolio/East Bay Repairs/Work Photos/IMG-1426.JPG" style="width:100%">
+				  <img class="mySlides" src="/home/terra/Desktop/Career/Portfolio/East Bay Repairs/Work Photos/IMG-1427.JPG" style="width:100%">
+				  <img class="mySlides" src="/home/terra/Desktop/Career/Portfolio/East Bay Repairs/Work Photos/IMG-1428.JPG" style="width:100%">
+				  <img class="mySlides" src="/home/terra/Desktop/Career/Portfolio/East Bay Repairs/Work Photos/IMG-1429.JPG" style="width:100%">
+
+				  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+				  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+				</div>
+				<script>
+					var slideIndex = 1;
+					showDivs(slideIndex);
+
+					function plusDivs(n) {
+					  showDivs(slideIndex += n);
+					}
+
+					function showDivs(n) {
+					  var i;
+					  var x = document.getElementsByClassName("mySlides");
+					  if (n > x.length) {slideIndex = 1}
+					  if (n < 1) {slideIndex = x.length}
+					  for (i = 0; i < x.length; i++) {
+					    x[i].style.display = "none";  
+					  }
+					  x[slideIndex-1].style.display = "block";  
+					}
+				</script>
+			</div>
 		</div>
 
 		<!--Free Estimate reminder and link-->
@@ -95,19 +126,25 @@
 		<div class="commitment">
 			<div class="overlay"></div>
 			<div class="text">
-				<h2 id="mission" style="font-size:40px">Our Commitment</h2>
-				<h3>Our Mission</h3>
-				<p>
-					Our mission is to provide the highest quality in construction handyman services, for reasonable rates. We strive for long-term relationships over short-term profit.
-				</p>
-				<h3>Timely Service</h3>
-				<p>
-					We promise a prompt call back. Our customers are our #1 priority. We're here to help
-				</p>
-				<h3>Green Building</h3>
-				<p>
-					We're committed to maintaining the highest industry standards while using green building products, whenever possible. Greening the Bay Area, one home at a time!
-				</p>
+			<h2 id="mission" style="font-size:40px">Our Commitment</h2>
+				<div id="ourMission">
+					<h3>Our Mission</h3>
+					<p>
+						Our mission is to provide the highest quality in construction handyman services, for reasonable rates. We strive for long-term relationships over short-term profit.
+					</p>
+				</div>
+				<div id="timely">
+					<h3>Timely Service</h3>
+					<p>
+						We promise a prompt call back. Our customers are our #1 priority. We're here to help
+					</p>
+				</div>
+				<div id="green">
+					<h3>Green Building</h3>
+					<p>
+						We're committed to maintaining the highest industry standards while using green building products, whenever possible. Greening the Bay Area, one home at a time!
+					</p>
+				</div>
 			</div>
 		</div>
 
