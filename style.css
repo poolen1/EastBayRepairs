@@ -14,6 +14,14 @@
 	top: 0;
 }
 
+.text {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 9;
+	color: white;
+}
+
 div.intro:hover > .overlay {
     position: absolute;
     top: 0;
@@ -53,7 +61,6 @@ div.intro li.title-link {
 	border-style: double;
 }
 
-div.intro li a:active {background-color: #4CAF50;}
 div.intro li a:link {color: white;}
 div.intro li a:visited {color: white;}
 
@@ -66,11 +73,12 @@ ul.topnav {
  	background-color: #333;
  	position: sticky;
  	top: 0;
- 	z-index: 1;
+ 	z-index: 10;
 }
 
 ul.topnav li {float: left;}
 ul.topnav li.right {float: right;}
+
 
 ul.topnav li a {
  	display: block;
@@ -80,9 +88,8 @@ ul.topnav li a {
  	text-decoration: none;
 }
 
-ul.topnav li a:hover:not(.active) {background-color: #111;}
-
-ul.topnav li a.active {background-color: #4CAF50;}
+ul.topnav li a:hover {background-color: #4CAF50;}
+ul.topnav li a:active {background-color: #4CAF50;}
 
 .active {
   background-color: #4CAF50;
@@ -104,6 +111,7 @@ div.about{
 
 /*Estimate Reminder; class="reminder"*/
 div.reminder {
+	position: relative;
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
@@ -112,8 +120,8 @@ div.reminder {
 	height: 400px;
 	background-repeat: no-repeat;
 	background-size: cover;
-	position: relative;
 	top: 0;
+	align-items: center;
 }
 
 div.reminder p a:active {background-color: #4CAF50;}
@@ -138,25 +146,29 @@ div.reminder p {
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
-	float: left;
+	float: center;
 	z-index: 9;
 }
 
 div.reminder p.reminder-text {
-	position: absolute;
+	position: relative;
 	text-align: center;
-	margin: 30px;
 	top: 30%;
 	color: white;
 }
 
 div.reminder p.reminder-link {
-	position: absolute;
+	position: relative;
 	text-align: center;
-	margin: 60px;
-	top: 60%;
+	margin-left: auto;
+	margin-right: auto;
+	top: 30%;
 	color: white;
+}
+
+div.reminder a.reminder-link {
 	border-style: double;
+	padding: 20px;
 }
 
 /*Handyman Services; class="services"*/
@@ -180,6 +192,32 @@ div.services {
 div.services p {
 }
 
+#landscaping {
+	float: left;
+	width: 20%;
+	margin: 10px;
+	padding-left: 5%;
+}
+
+#painting {
+	float: left;
+	width: 20%;
+	margin: 10px;
+}
+
+#carpentry {
+	float: right;
+	width: 20%;
+	margin: 10px;
+	padding-right: 5%;
+}
+
+#installation {
+	float: right;
+	width: 20%;
+	margin: 10px;
+}
+
 /*Mission Statement; class="commitment"*/
 div.commitment {
 	list-style-type: none;
@@ -196,7 +234,7 @@ div.commitment {
 }
 
 div.commitment:hover > .overlay {
-    position: absolute;
+	position: absolute;
     top: 0;
     width:100%;
     height:100%;
@@ -225,6 +263,7 @@ div.commitment p {
 }
 
 div.commitment p {
+	position: absolute;
 	color: white;
 }
 
@@ -238,5 +277,4 @@ div.footer {
 	text-align: center;
 	background-color: gray;
 	color: white;
-
 }
