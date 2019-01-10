@@ -313,7 +313,33 @@ div.commitment p {
 
 /*Free Estimate; class="contact-form"*/
 div.contact-form {
+	position: relative;
 	text-align: center;
+	height: 400px;
+}
+
+#name {
+	float: left;
+	margin-left: 5%;
+
+}
+
+#email {
+	float: right;
+	margin-right: 5%;
+}
+
+#phnum {
+	float: right;
+}
+
+#address {
+	float: center;
+	width: 80%;
+}
+
+#project {
+	height: 30%;
 }
 
 /*Contact Us; class="footer"*/
