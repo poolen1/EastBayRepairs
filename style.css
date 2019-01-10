@@ -116,6 +116,13 @@ div.about{
 	height: 500px;
 }
 
+.icon {
+	position: relative;
+	float: left;
+	height: 40px;
+	margin: 5px;
+}
+
 #aboutUs {
 	float: left;
 	width: 20%;
@@ -124,10 +131,11 @@ div.about{
 }
 
 #slideshow {
+	position: relative;
 	float: right;
-	width: 20%;
-	margin: 10px;
-	padding-right: 5%;
+	width: 45%;
+	padding-right: 10%;
+	padding-top: 10%;
 }
 
 /*Estimate Reminder; class="reminder"*/
@@ -145,7 +153,6 @@ div.reminder {
 	align-items: center;
 }
 
-div.reminder p a:active {background-color: #4CAF50;}
 div.reminder p a:link {color: white;}
 div.reminder p a:visited {color: white;}
 
@@ -267,11 +274,6 @@ div.commitment:hover > .overlay {
 }
 
 div.commitment p {
-	display: block;
-	color: white;
-	text-align: center;
-	text-decoration: none;
-	z-index: 9;
 }
 
 #mission {
@@ -285,20 +287,23 @@ div.commitment p {
 	float: left;
 	width: 20%;
 	margin: 10px;
-	padding-left: 5%;
+	margin-left: 15%;
+	position: relative;
 }
 
 #timely {
-	float: left;
+	float: right;
 	width: 20%;
 	margin: 10px;
+	position: relative;
 }
 
 #green {
 	float: right;
 	width: 20%;
 	margin: 10px;
-	padding-right: 5%;
+	margin-right: 15%;
+	position: relative;
 }
 
 div.commitment p {

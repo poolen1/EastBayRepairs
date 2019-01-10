@@ -49,36 +49,39 @@
 			<div id="aboutUs">
 				<h2>About Us</h2>
 				<p>About us copy (bio)</p>
+				<img class="icon" src="https://cdn2.iconfinder.com/data/icons/capsocial-square-flat-3/500/facebook-512.png">
+				<img class="icon" src="https://cdn2.iconfinder.com/data/icons/capsocial-square-flat-3/500/google-512.png">
+				<img class="icon" src="https://cdn2.iconfinder.com/data/icons/social-flat-buttons-3/512/yelp-512.png">
 			</div>
 				<div id="slideshow">
-				<div class="w3-content w3-display-container">
-				  <img class="mySlides" src="/home/terra/Desktop/Career/Portfolio/East Bay Repairs/Work Photos/IMG-1426.JPG" style="width:100%">
-				  <img class="mySlides" src="/home/terra/Desktop/Career/Portfolio/East Bay Repairs/Work Photos/IMG-1427.JPG" style="width:100%">
-				  <img class="mySlides" src="/home/terra/Desktop/Career/Portfolio/East Bay Repairs/Work Photos/IMG-1428.JPG" style="width:100%">
-				  <img class="mySlides" src="/home/terra/Desktop/Career/Portfolio/East Bay Repairs/Work Photos/IMG-1429.JPG" style="width:100%">
+					<div class="w3-content w3-display-container">
+					  <img class="mySlides" src="/home/terra/Desktop/Career/Portfolio/East Bay Repairs/Work Photos/IMG-1426.JPG" style="width:100%">
+					  <img class="mySlides" src="/home/terra/Desktop/Career/Portfolio/East Bay Repairs/Work Photos/IMG-1427.JPG" style="width:100%">
+					  <img class="mySlides" src="/home/terra/Desktop/Career/Portfolio/East Bay Repairs/Work Photos/IMG-1428.JPG" style="width:100%">
+					  <img class="mySlides" src="/home/terra/Desktop/Career/Portfolio/East Bay Repairs/Work Photos/IMG-1429.JPG" style="width:100%">
 
-				  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-				  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+					  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+					  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+					<script>
+						var slideIndex = 1;
+						showDivs(slideIndex);
+
+						function plusDivs(n) {
+						  showDivs(slideIndex += n);
+						}
+
+						function showDivs(n) {
+						  var i;
+						  var x = document.getElementsByClassName("mySlides");
+						  if (n > x.length) {slideIndex = 1}
+						  if (n < 1) {slideIndex = x.length}
+						  for (i = 0; i < x.length; i++) {
+						    x[i].style.display = "none";  
+						  }
+						  x[slideIndex-1].style.display = "block";  
+						}
+					</script>
 				</div>
-				<script>
-					var slideIndex = 1;
-					showDivs(slideIndex);
-
-					function plusDivs(n) {
-					  showDivs(slideIndex += n);
-					}
-
-					function showDivs(n) {
-					  var i;
-					  var x = document.getElementsByClassName("mySlides");
-					  if (n > x.length) {slideIndex = 1}
-					  if (n < 1) {slideIndex = x.length}
-					  for (i = 0; i < x.length; i++) {
-					    x[i].style.display = "none";  
-					  }
-					  x[slideIndex-1].style.display = "block";  
-					}
-				</script>
 			</div>
 		</div>
 
@@ -133,16 +136,16 @@
 						Our mission is to provide the highest quality in construction handyman services, for reasonable rates. We strive for long-term relationships over short-term profit.
 					</p>
 				</div>
-				<div id="timely">
-					<h3>Timely Service</h3>
-					<p>
-						We promise a prompt call back. Our customers are our #1 priority. We're here to help
-					</p>
-				</div>
 				<div id="green">
 					<h3>Green Building</h3>
 					<p>
 						We're committed to maintaining the highest industry standards while using green building products, whenever possible. Greening the Bay Area, one home at a time!
+					</p>
+				</div>
+				<div id="timely">
+					<h3>Timely Service</h3>
+					<p>
+						We promise a prompt call back. Our customers are our #1 priority. We're here to help!
 					</p>
 				</div>
 			</div>
@@ -166,7 +169,7 @@
 			<h2>Contact Us</h2>
 			<h3>
 				East Bay Repairs <br>
-				Phone, Email <br>
+				Phone: 555-867-5309, Email: eastbayrepairs@gmail.com <br>
 				Serving Berkeley and Oakland <br>
 			</h3>
 		</div>
