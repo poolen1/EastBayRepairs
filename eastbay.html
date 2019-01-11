@@ -130,12 +130,6 @@
 			<div class="overlay"></div>
 			<div class="text">
 			<h2 id="mission" style="font-size:40px">Our Commitment</h2>
-				<div id="ourMission">
-					<h3>Our Mission</h3>
-					<p>
-						Our mission is to provide the highest quality in construction handyman services, for reasonable rates. We strive for long-term relationships over short-term profit.
-					</p>
-				</div>
 				<div id="green">
 					<h3>Green Building</h3>
 					<p>
@@ -148,6 +142,12 @@
 						We promise a prompt call back. Our customers are our #1 priority. We're here to help!
 					</p>
 				</div>
+				<div id="ourMission">
+					<h3>Our Mission</h3>
+					<p>
+						Our mission is to provide the highest quality in construction handyman services, for reasonable rates. We strive for long-term relationships over short-term profit.
+					</p>
+				</div>
 			</div>
 		</div>
 
@@ -155,13 +155,17 @@
 
 		<!--Free Estimate Form-->
 		<div class="contact-form">
-			<h1 id="estimate">GET YOUR FREE ESTIMATE</h1>
-			<p id="name"><input type="text" name="name" placeholder="Name"></p>
-			<p id="email"><input type="text" name="email" placeholder="Email"></p>
-			<p id="phnum"><input type="text" name="phone" placeholder="Phone Number"></p>
-			<p id="address"><input type="text" name="address" placeholder="Address" size="75"></p>
-			<p id="project"><input type="text" name="project" placeholder="Describe Your Project" style="height:200px"></p>
-			<p><input type="submit" value="Send"></p>
+			<div class="container">
+				<h1 id="estimate">GET YOUR FREE ESTIMATE</h1>
+				<div class="row1">
+					<p id="email"><input type="text" name="email" placeholder="Email"></p>
+					<p id="phnum"><input type="text" name="phone" placeholder="Phone Number"></p>
+					<p id="name"><input type="text" name="name" placeholder="Name"></p>
+				</div>
+				<p id="address"><input type="text" name="address" placeholder="Address" size="150"></p>
+				<textarea name="project" placeholder="Describe Your Project" style="height:150px"></textarea>
+				<p id="send-button"><input type="submit" value="Send"></p>
+			</div>
 		</div>
 
 		<!--"Contact us!"-->
