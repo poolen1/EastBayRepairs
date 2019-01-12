@@ -114,6 +114,7 @@ ul.topnav li a.right {float: right;}
 /*About Us; class="about"*/
 div.about{
 	height: 500px;
+	width: 800px;
 }
 
 .icon {
@@ -324,7 +325,7 @@ div.contact-form {
 }
 
 input[type=text], textarea {
-  width: 100%;
+  width: 90%;
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -336,7 +337,7 @@ input[type=text], textarea {
 
 textarea {
 	position: relative;
-	bottom: 85px;
+	bottom: 75px;
 }
 
 .row1 {
@@ -363,7 +364,7 @@ textarea {
 	float: right;
 	width: 82%;
 	margin-right: 9.5%;
-	bottom: 50px;
+	bottom: 45px;
 }
 
 #project {
@@ -385,7 +386,7 @@ input[type=submit]:hover {
 
 #send-button {
 	position: relative;
-	bottom: 100px;
+	bottom: 95px;
 }
 
 /*Contact Us; class="footer"*/
@@ -394,4 +395,11 @@ div.footer {
 	background-color: gray;
 	color: white;
 	height: 200px;
+	position: relative;
+	bottom: 0px;
+}
+
+.foot-text {
+	position: relative;
+	top: 30px;
 }
